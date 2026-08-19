@@ -86,12 +86,15 @@ section h3 {
   font-size: 15px;
 }
 
-.participants ul {
+.participants ul,
+.participants-list {
   padding-left: 0;
+  list-style-type: none;
   color: #555;
 }
 
-.participants li {
+.participants li,
+.participants-list li {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,10 +106,10 @@ section h3 {
 .participants .no-participants {
   color: #777;
   font-style: italic;
-  list-style: none;
-  margin-left: -20px;
+  list-style-type: none;
 }
 
+.delete-participant,
 .remove-participant {
   flex: 0 0 auto;
   width: 24px;
@@ -120,6 +123,7 @@ section h3 {
   line-height: 1;
 }
 
+.delete-participant:hover,
 .remove-participant:hover {
   background-color: #ffebee;
 }

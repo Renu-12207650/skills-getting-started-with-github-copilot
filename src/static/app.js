@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <li>
                     <span>${participant}</span>
                     <button
-                      class="remove-participant"
+                      class="delete-participant remove-participant"
                       type="button"
                       data-activity="${encodeURIComponent(name)}"
                       data-email="${encodeURIComponent(participant)}"
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <div class="participants">
             <h5>Participants</h5>
-            <ul>${participantList}</ul>
+            <ul class="participants-list">${participantList}</ul>
           </div>
         `;
 
